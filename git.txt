@@ -1,8 +1,12 @@
+*commit often to be able to roll back changes 
+
 git init - initialize repo
 git status - untracked files / not commited 
 git add - add file to repo
 git add . - add all files
 git commit -m " " - 
-*commit often to be able to roll back changes 
-git reset filename - remove added file
+git reset filename or dir/ - remove added file
+git remote add origin https://github.com/ep866/orientation.git
+git push -u origin master - -u remembers origin master 
+git pull origin master
 
