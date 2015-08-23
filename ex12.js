@@ -10,7 +10,7 @@ var server = http.createServer( function(req, res) {
     }
     
     req.pipe( map(function(chunk) {
-        //date manipulation, follwed by repipe
+        //data manipulation, follwed by repipe
        return chunk.toString().toUpperCase();
     })).pipe(res);
     
