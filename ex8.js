@@ -4,42 +4,42 @@
     var URL = process.argv[2];
     var result = "";
     
-    http.get(URL, function(response){
+    http.get(URL, function(response) {
         response.setEncoding('utf8');
         
         response.on('error', function(error) {
-            console.error;
+            console.error(error);
         });
         
-        response.on('data', function(data){
+        response.on('data', function(data) {
             result += data;
         });
         
         response.on('end', function() {
-            console.log(result.length)
+            console.log(result.length);
             console.log(result);
         });
     });
 
 // V2. Solution with npm bl package
 
-var http = require('http');
-var bl = require('bl');
-var URL = process.argv[2];
-
-http.get(URL, function(response){ 
-    response.setEncoding('utf8');
+    var http = require('http');
+    var bl = require('bl');
+    var URL = process.argv[2];
     
-    response.pipe(bl(function(err, data){ 
-        if(err) return console.error(err);
+    http.get(URL, function(response) { 
+        response.setEncoding('utf8');
         
-        data = data.toString();
+        response.pipe(bl(function(err, data) { 
+            if(err) return console.error(err);
+            
+            data = data.toString();
+            
+            console.log(data.length);
+            console.log(data);
+        }));
         
-        console.log(data.length);
-        console.log(data);
-    }));
-    
-});
+    });
 
 
 
