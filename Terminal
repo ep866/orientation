@@ -1,0 +1,81 @@
+Pwd – print working directory
+Ls – List
+whoami - print name of computer
+cd – nav to directory
+~ - tilde
+cd .. - go back one level
+touch stuff.txt - create file in wd
+cat stuff.txt - shows what is in the file
+rm stuff.txt - remove file forever
+mkdir - make directory
+mkdir test1 test2 - multiple directories at the same time
+mkdir -p food/peanut/butter - make subdir
+rmdir - remove directory
+history - all commands since login
+cmd + k - clear terminal
+rm -rf - recursively / forcefully remove
+cp file_to_move ../path_to_dir/rename_file - copy
+ls -l - list all files and permissions
+ls -la - list plus hidden fies
+mv tmp/more-stuff.txt - move files
+mv more-stuff.txt old-stuff.txt - rename file
+cp -r test/ test2/ - copy folder recursively
+echo - print 
+echo "hello world!" > old_stuff.txt - write to file
+echo "hello world!" >> old_stuff.txt - append to text file
+vim - text editor
+ctrl + c - cancel command
+grep "hey" old_stuff.txt - find occurance of hey
+echo "hello world bla bla bla" | wc - word count
+| pipe - take output and redirect to another command
+env - print environment
+echo $EMAIL - print variable
+export TEST="This is a test!" - make variable (usecase: API key save to env rather than app)
+man grep - manual for grep 
+q - get out of manual
+less filename - scroll through file
+c9 open filename - open file in c9
+
+
+todo
+ * grep tutotial
+ * codeac. tutotial
+ * regular expressions citsheat
+ * mdn
+ * mdn javascript push - google to get it as first result
+ * github/clhenrick
+ * bit.ly/cli-intro
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
