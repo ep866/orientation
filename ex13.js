@@ -25,14 +25,15 @@ var server = http.createServer(function(req, res) {
     };
     
     
-    res.writeHead(200, {'Content-Type': 'application/json'});
     
     if( parsedURL.pathname == '/api/parsetime' ) {
+        res.writeHead(200, {'Content-Type': 'application/json'});
         res.write(JSON.stringify(endpoints.time));
         res.end();        
     }
     
     if( parsedURL.pathname == '/api/unixtime' ) {
+        res.writeHead(200, {'Content-Type': 'application/json'});
         res.write(JSON.stringify(endpoints.unixtime));
         res.end(); 
     }
